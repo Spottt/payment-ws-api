@@ -198,7 +198,7 @@ class WsApi extends \SoapClient
     {
         $this->mode = $ctxMode;
         $this->shopId = $shopId;
-        $this->certificate = ($mode === 'PRODUCTION') ? $keyProd : $keyTest;
+        $this->certificate = ($ctxMode === 'PRODUCTION') ? $keyProd : $keyTest;
 
         return $this;
     }

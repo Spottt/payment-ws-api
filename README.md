@@ -48,7 +48,7 @@ try {
     );
 
     $wsApi = new \Lyranetwork\WsApi($options, $url);
-    $wsApi->init($shopId, $mode, $keyTest, $keyProd);
+    $wsApi->init($shopId, $ctxMode, $keyTest, $keyProd);
 
     // example of getPaymentDetails call
     $queryRequest = new \Lyranetwork\QueryRequest();
