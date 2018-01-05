@@ -91,6 +91,21 @@ try {
 }
 ```
 
+
+## Test
+
+
+Create config-ws.ini file based on config-ws.ini.template
+
+After that you can run : 
+
+```bash
+# install only once
+# composer install 
+vendor/bin/phpunit lib/tests/IntegrationTest.php
+
+```
+
 ## License
 
 Each Lyra payment WS API source file included in this distribution is licensed under GNU GENERAL PUBLIC LICENSE (GPL 3.0).
